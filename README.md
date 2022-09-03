@@ -36,6 +36,6 @@ If you are running Jupyter straight from Windows without any containers, you can
 
 `ssh -L 8889:localhost:8889 -i <path to private key> <username>@<remote address> -p <port number> -t "<path to script>"`.
 
-However, in order to run jupyter from Anaconda *and* use a custom drive (it defaults to C), there is a shortcut for 'Jupyter Notebook (Anaconda3)' in C:\Users\<username>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Anaconda3 (64-bit). Copy the 'Target' field into a Batch script and change the '%USERPROFILE%/' into whatever directory you wish the notebook to launch in. Add '--no-browser' after the quote.
+However, in order to run jupyter from Anaconda *and* use a custom drive (it defaults to C), there is a shortcut for 'Jupyter Notebook (Anaconda3)' in C:\Users\\<username\>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Anaconda3 (64-bit). Copy the 'Target' field into a Batch script and change the '%USERPROFILE%/' into whatever directory you wish the notebook to launch in. Add '--no-browser' after the quote.
 
 You can now connect automatically by the same command and will have access to all of Conda's packages.
