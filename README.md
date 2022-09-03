@@ -32,7 +32,7 @@ In order to access a Jupyter notebook instance, you run it on the remote system 
 After this, copy the address with the token into your local browser and you should be able to use the notebook remotely. It will look something like `http://localhost:8889/?token=6eabcb9d2a8cd5cd5e7c8ea0125b3592c3f9a53a133f7cf9`
 
 # Automation and Anaconda
-If you are running Jupyter straight from Windows without any containers, you can create a Batch script with the contents `jupyter notebook` and that'll be that. Then your connect.sh script will simply be the command
+If you are running Jupyter straight from Windows without any containers, you can create a Batch script with the contents `jupyter notebook --no-browser <target directory>` and that'll be that. Then your connect.sh script will simply be the command
 
 `ssh -L 8889:localhost:8889 -i <path to private key> <username>@<remote address> -p <port number> -t "<path to script>"`.
 
