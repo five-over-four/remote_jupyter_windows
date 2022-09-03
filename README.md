@@ -40,7 +40,7 @@ OR just
 
 `ssh -L 8889:localhost:8889 -i <path to private key> <username>@<remote address> -p <port number> -t "jupyter notebook --no-browser --port=8889 <target directory>"`
 
-However, in order to run jupyter from Anaconda *and* use a custom drive (it defaults to C), there is a shortcut for 'Jupyter Notebook (Anaconda3)' in C:\Users\\<username\>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Anaconda3 (64-bit). Copy the 'Target' field into a Batch script and change the '%USERPROFILE%/' into whatever directory you wish the notebook to launch in. Add '--no-browser --port=89' after the quote.
+However, in order to run jupyter from Anaconda *and* use a custom drive (it defaults to C), there is a shortcut for 'Jupyter Notebook (Anaconda3)' in C:\Users\\<username\>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Anaconda3 (64-bit). Copy the 'Target' field into a Batch script and change the '%USERPROFILE%/' into whatever directory you wish the notebook to launch in. Add '--no-browser --port=8889' after the quote.
 
 Having saved the batch script, you can use the same connect.sh script now to automatically connect to the remote pc with immediate Jupyter access.
 
