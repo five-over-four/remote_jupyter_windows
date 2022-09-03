@@ -38,4 +38,7 @@ If you are running Jupyter straight from Windows without any containers, you can
 
 However, in order to run jupyter from Anaconda *and* use a custom drive (it defaults to C), there is a shortcut for 'Jupyter Notebook (Anaconda3)' in C:\Users\\<username\>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Anaconda3 (64-bit). Copy the 'Target' field into a Batch script and change the '%USERPROFILE%/' into whatever directory you wish the notebook to launch in. Add '--no-browser' after the quote.
 
-You can now connect automatically by the same command and will have access to all of Conda's packages.
+Having saved the batch script, you can use the same connect.sh script now to automatically connect to the remote pc with immediate Jupyter access.
+
+## End
+The purpose of this writeup is to simplify the process I spent the better part of two days going through. [Here is the windows resource for configuring openSSH](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_server_configuration).
