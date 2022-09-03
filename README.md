@@ -9,7 +9,7 @@ To start it on boot,
 `Set-Service sshd -Startup-Type Automatic`.
 
 ## Key pair generation
-Next, if your user is an administrator, create the file 'administrators_authorized_keys' in C:\ProgramData\ssh. Otherwise create 'authorized_keys'. OpenSSH defaults to only reading ~/.ssh/authorized keys, but this can be overriden with the setting 'AuthorizedKeysFile \_\_PROGRAMDATA\_\_/ssh/authorized_keys'. You can generate a 4096 bit rsa key pair with `ssh-keygen -t rsa -b 4096` and place the public key (file extension .pub) in the C:\ProgramData\ssh directory. It is *recommended* to use a passphrase. Copy the contents into the authorized key file corresponding to your user privileges. Each key entry must be on a new line.
+If your user is an administrator, create the file 'administrators_authorized_keys' in C:\ProgramData\ssh. Otherwise create 'authorized_keys'. OpenSSH defaults to only reading ~/.ssh/authorized keys, but this can be overriden with the setting 'AuthorizedKeysFile \_\_PROGRAMDATA\_\_/ssh/authorized_keys'. You can generate a 4096 bit rsa key pair with `ssh-keygen -t rsa -b 4096` and place the public key (file extension .pub) in the C:\ProgramData\ssh directory. It is *recommended* to use a passphrase. Copy the contents into the authorized key file corresponding to your user privileges. Each key entry must be on a new line.
 
 Move the private key (no file extension) to the device you wish to access the server from. Set its permissions to 400- keys with open permissions will be rejected in the key exchange.
 
