@@ -34,7 +34,11 @@ After this, copy the address with the token into your local browser and you shou
 # Automation and Anaconda
 If you are running Jupyter straight from Windows without any containers, you can create a Batch script with the contents `jupyter notebook --no-browser <target directory>` and that'll be that. Then your connect.sh script will simply be the command
 
-`ssh -L 8889:localhost:8889 -i <path to private key> <username>@<remote address> -p <port number> -t "<path to script>"`.
+`ssh -L 8889:localhost:8889 -i <path to private key> <username>@<remote address> -p <port number> -t "<path to script>"`
+
+OR just
+
+`ssh -L 8889:localhost:8889 -i <path to private key> <username>@<remote address> -p <port number> -t "jupyter notebook --no-browser <target directory>"`
 
 However, in order to run jupyter from Anaconda *and* use a custom drive (it defaults to C), there is a shortcut for 'Jupyter Notebook (Anaconda3)' in C:\Users\\<username\>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Anaconda3 (64-bit). Copy the 'Target' field into a Batch script and change the '%USERPROFILE%/' into whatever directory you wish the notebook to launch in. Add '--no-browser' after the quote.
 
