@@ -41,4 +41,4 @@ However, in order to run jupyter from Anaconda *and* use a custom drive (it defa
 Having saved the batch script, you can use the same connect.sh script now to automatically connect to the remote pc with immediate Jupyter access.
 
 ## End
-The purpose of this writeup is to simplify the process I spent the better part of two days going through. [Here is the windows resource for configuring openSSH](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_server_configuration).
+The purpose of this write-up is to simplify the process I spent the better part of two days going through. [Here is the windows resource for configuring openSSH](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_server_configuration).
