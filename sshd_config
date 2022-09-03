@@ -19,7 +19,7 @@
 # Ciphers and keying
 #RekeyLimit default none
 
-# Extra security with accepted things
+# Extra security through ssh-audit.com compliance
 MACs -hmac-sha1-etm@openssh.com,hmac-sha1,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,umac-64-etm@openssh.com,umac-64@openssh.com
 kexalgorithms -acdsa-sha2-nistp256,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group14-sha1,ecdsa-sha2-nistop256,diffie-hellman-group-exchange-sha256,ecdsa-sha2-nistp256
 HostKeyAlgorithms -ecdsa-sha2-nistp256,ssh-rsa
